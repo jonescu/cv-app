@@ -1,0 +1,1 @@
+-CV Application from The Odin Project built using create-react-app
