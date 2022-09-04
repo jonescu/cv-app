@@ -1,6 +1,7 @@
 import React from "react";
 import Form from "./components/Form";
 import Cv from "./components/Cv";
+import Header from "./components/Header";
 import { useState } from "react";
 import './index.css'
 
@@ -26,6 +27,7 @@ function App() {
 
   return (
     <div className="app-container">
+      <Header />
       <Form handleChange={handleChange}/>
       <Cv input={input}/>
     </div>
