@@ -3,7 +3,7 @@ import React from 'react'
 function Header() {
   return (
     <header>
-      <h1>CV Application</h1>
+      <h1>CV Generator</h1>
     </header>
   )
 }

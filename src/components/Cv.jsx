@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaDownload } from 'react-icons/fa'
 
 function Cv({ input }) {
 
@@ -6,7 +7,7 @@ function Cv({ input }) {
     <div className='cv-container'>
 
       <div className='general-spans'>
-        <span id='name'>Name: {input.name}</span>
+        <span id='name'>{input.name ? `${input.name}` : "Your name here"}</span>
         <span id='email'>Email: {input.email}</span>
         <span id='tel'>Phone: {input.tel}</span>
       </div>
@@ -26,8 +27,8 @@ function Cv({ input }) {
       </div>
 
       <div className='buttons-container'>
-        <button>Clear</button>
-        <button>Download PDF</button>
+        <button className='clear-btn'>Clear</button>
+        <button className='download-btn'><FaDownload/> PDF</button>
       </div>
      
     </div>

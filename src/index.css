@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: lightgrey;
+  background-color:#fff;
   font-family: "Lato", sans-serif;
   overflow: scroll;
 }
@@ -24,9 +24,16 @@ body {
 
 /* Form Styling */
 
-.form-container {
-  border: 1px solid blue;
+.form-container, .cv-container {
+  -webkit-box-shadow: 0 0 5px 2px #fff;
+  -moz-box-shadow: 0 0 5px 2px #fff;
+  box-shadow: 0 0 5px 2px rgb(134, 125, 125);
+  border-radius: 7px;
   width: 50%;
+  background-color:floralwhite
+}
+
+.form-container {
   padding: 5rem;
   display: flex;
   justify-content: space-around;
@@ -37,12 +44,17 @@ body {
   flex-direction: column;
 }
 
+.form-container section > input {
+  padding: 0.2rem;
+}
+
 .form-container section * {
   margin: 0.5rem;
 }
 
 .form-container section > h3 {
   text-align: center;
+  font-weight: 400;
 }
 
 /* CV Styling */
@@ -50,8 +62,6 @@ body {
 .cv-container {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
-  width: 50%;
 }
 
 .cv-container div {
@@ -60,4 +70,25 @@ body {
 
 .cv-container div > span {
   padding: 1rem;
+}
+
+.cv-container .buttons-container {
+  display: block;
+  margin: 0 auto;
+}
+
+.cv-container .buttons-container > button {
+  padding: 0.7rem 1rem;
+  margin: 0 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cv-container .buttons-container > .clear-btn {
+  background-color: rgb(238, 184, 195);
+}
+
+.cv-container .buttons-container > .download-btn {
+  background-color: aquamarine;
 }
