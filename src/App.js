@@ -40,11 +40,27 @@ function App() {
     setImg(URL.createObjectURL(file))
   }
 
+  const clearInputs = () => {
+    setInput({
+      name: '',
+      email: '',
+      tel: '',
+      institution: '',
+      field: '',
+      institutionFrom: '',
+      institutionTo: '',
+      company: '',
+      jobTitle: '',
+      companyFrom: '',
+      companyTo: ''
+    })
+  }
+
   return (
     <div className="app-container">
       <Header />
-      <Form handleChange={handleChange} onImageChange={onImageChange}/>
-      <Cv input={input} img={img}/>
+      <Form handleChange={handleChange} onImageChange={onImageChange} input={input}/>
+      <Cv input={input} img={img} clearInputs={clearInputs}/>
     </div>
   )
 }

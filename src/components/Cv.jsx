@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaDownload } from 'react-icons/fa';
 
-function Cv({ input, img, generatePDF }) {
+function Cv({ input, img, clearInputs }) {
  
   return (
     <div className='cv-container'>
@@ -31,7 +31,7 @@ function Cv({ input, img, generatePDF }) {
 
 
         <div className='buttons-container'>
-          <button className='clear-btn'>Clear</button>
+          <button className='clear-btn' onClick={clearInputs}>Clear</button>
           <button className='download-btn'><FaDownload/> PDF</button>
         </div>
      
