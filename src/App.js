@@ -7,6 +7,7 @@ import './index.css'
 
 function App() {
   // Set state
+  const [img, setImg] = useState();
   const [input, setInput] = useState({
     name: '',
     email: '',
@@ -34,11 +35,16 @@ function App() {
     }
   }
 
+  const onImageChange = (e) => {
+    const file = e.target.files[0]
+    setImg(URL.createObjectURL(file))
+  }
+
   return (
     <div className="app-container">
       <Header />
-      <Form handleChange={handleChange}/>
-      <Cv input={input}/>
+      <Form handleChange={handleChange} onImageChange={onImageChange}/>
+      <Cv input={input} img={img}/>
     </div>
   )
 }
