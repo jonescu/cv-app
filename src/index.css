@@ -115,3 +115,30 @@ header > h1 {
 .cv-container .buttons-container > .download-btn {
   background-color: aquamarine;
 }
+
+
+@media only screen and (max-width: 576px) {
+  .cv-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1415px) {
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+
+  .cv-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+
+}

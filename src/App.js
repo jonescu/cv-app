@@ -54,6 +54,7 @@ function App() {
       companyFrom: '',
       companyTo: ''
     })
+    setImg(null)
   }
 
   return (
