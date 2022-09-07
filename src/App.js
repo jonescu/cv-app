@@ -10,12 +10,21 @@ function App() {
   const [input, setInput] = useState({
     name: '',
     email: '',
-    tel: ''
+    tel: '',
+    institution: '',
+    field: '',
+    institutionFrom: '',
+    institutionTo: '',
+    company: '',
+    jobTitle: '',
+    companyFrom: '',
+    companyTo: ''
   })
 
   // Get user input and change the output text to it's corresponding input
   const handleChange = (e) => {
     let myObj = {...input}
+    console.log(myObj)
 
     for(let key in myObj) {
       if(e.target.id === key) {

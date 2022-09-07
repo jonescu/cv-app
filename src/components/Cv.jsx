@@ -7,23 +7,26 @@ function Cv({ input }) {
     <div className='cv-container'>
 
       <div className='general-spans'>
-        <span id='name'>{input.name ? `${input.name}` : "Your name here"}</span>
-        <span id='email'>Email: {input.email}</span>
-        <span id='tel'>Phone: {input.tel}</span>
+        <h3>About</h3>
+        <span id='name'>{input.name ? `${input.name}` : "Name here"}</span>
+        <span id='email'>{input.email ? `${input.email}` : "Email here"}</span>
+        <span id='tel'>{input.tel ? `${input.tel}` : "Phone # here"}</span>
       </div>
     
       <div className='education-spans'> 
-        <span>School Name</span>
-        <span>Subject</span>
-        <span>From</span>
-        <span>To</span>
+        <h3>Education</h3>
+        <span>{input.institution ? `${input.institution}` : "School here"}</span>
+        <span>{input.field ? `${input.field}` : "Subject here"}</span>
+        <span>{input.institutionFrom ? `${input.institutionFrom}` : "From"}</span>
+        <span>{input.institutionTo ? `${input.institutionTo}` : "To"}</span>
       </div>
     
       <div className='experience-spans'>
-        <span>Company Name</span>
-        <span>Title Held</span>
-        <span>From</span>
-        <span>To</span>
+        <h3>Work Experience</h3>
+        <span>{input.company ? `${input.company}` : "Company here"}</span>
+        <span>{input.jobTitle ? `${input.jobTitle}` : "TItle held"}</span>
+        <span>{input.companyFrom ? `${input.companyFrom}` : "From"}</span>
+        <span>{input.companyTo ? `${input.companyTo}` : "To"}</span>
       </div>
 
       <div className='buttons-container'>

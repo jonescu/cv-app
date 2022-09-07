@@ -30,7 +30,7 @@ body {
   box-shadow: 0 0 5px 2px rgb(134, 125, 125);
   border-radius: 7px;
   width: 50%;
-  background-color:floralwhite
+  background-color:rgb(247, 255, 255);
 }
 
 .form-container {
@@ -64,12 +64,14 @@ body {
   flex-direction: column;
 }
 
-.cv-container div {
-  padding: 1rem;
+.cv-container h3 {
+  font-weight: 400;
+  padding: 0.5rem;
 }
 
-.cv-container div > span {
+.cv-container div, .cv-container div > span {
   padding: 1rem;
+  font-weight: 300;
 }
 
 .cv-container .buttons-container {
